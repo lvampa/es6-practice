@@ -7,9 +7,7 @@ describe("Player", function() {
     song = new Song();
   });
 
-  it("should add two", function() {
-     expect(5).toEqual(addTwo(3));
-  });
+
 
   it("should be able to play a Song", function() {
     player.play(song);

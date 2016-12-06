@@ -20,7 +20,3 @@ Player.prototype.resume = function() {
 Player.prototype.makeFavorite = function() {
   this.currentlyPlayingSong.persistFavoriteStatus(true);
 };
-
-function addTwo(number) {
-    return number + 2;
-}
