@@ -1,7 +1,7 @@
 describe("ES6 Arrow Function Refactoring", function() {
 
     describe("It should let you write less code", function() {
-        it("it should add two numbers together in ES5", function() {
+        it("it should add two numbers together", function() {
            expect(5).toEqual(addTogether(3,2));
         });
 
@@ -9,7 +9,7 @@ describe("ES6 Arrow Function Refactoring", function() {
            expect(7).toEqual(addTogetherArrow(5,2));
         });
 
-        it("It should add 3 to each element of the array in ES5", function() {
+        it("It should add 3 to each element of the array", function() {
             let a = [1, 2, 3];
             let b = [4, 5, 6];
             expect(b).toEqual(addThreeToEach(a));
@@ -20,6 +20,16 @@ describe("ES6 Arrow Function Refactoring", function() {
             let b = [5, 6, 7];
             expect(b).toEqual(addThreeToEachArrow(a));
         })
+
+        it("It should say 'Hello'", function() {
+            expect("Hello").toEqual(sayHello());
+        });
+
+        it("It should say 'Howdy' in ES6", function() {
+            expect("Howdy").toEqual(sayHelloArrow());
+        });
     });
+
+    
 
 })

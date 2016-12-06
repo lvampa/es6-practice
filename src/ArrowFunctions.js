@@ -7,9 +7,7 @@ let addTogether = function(x, y) {
 };
 
 // Parenthesis are required for mulpile arity
-let addTogetherArrow = (x,y) => {
-    return x + y
-};
+let addTogetherArrow = (x,y) => x + y;
 
 let addThreeToEach = function(array) {
     return array.map(function(number) {
@@ -18,15 +16,11 @@ let addThreeToEach = function(array) {
 };
 
 // But they are not required for functions with a single argument
-let addThreeToEachArrow = array => {
-    return array.map(number => number + 3)
-};
+let addThreeToEachArrow = array => array.map(number => number + 3);
 
 let sayHello = function() {
     return "Hello";
 }
 
 // However, nothing requires something
-let sayHelloArrow = () => {
-    return "Howdy"
-};
+let sayHelloArrow = () => "Howdy";
