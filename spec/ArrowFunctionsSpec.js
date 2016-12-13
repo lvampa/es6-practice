@@ -31,10 +31,25 @@ describe("ES6 Arrow Functions", function() {
         it("It should say 'Howdy' in ES6", function() {
             expect("Howdy").toEqual(sayHelloArrow());
         });
-    })
-
-    describe("", function() {
-        
     });
 
+    describe("What happened to 'this' in the old days", function() {
+        it("It should eat some of the icecream", function() {
+            let originalSize = iceCream.bitesLeft;
+            iceCream.eat();
+            let newSize = iceCream.bitesLeft
+
+            expect(originalSize).toEqual(newSize + 1)
+        })
+    });
+
+    describe("How the arrow function changes 'this'", function() {
+        it("It should not eat some of the icecream because 'this' does not refer to the ice cream", function() {
+            let originalSize = iceCreamArrow.bitesLeft;
+            iceCreamArrow.eat();
+            let newSize = iceCreamArrow.bitesLeft
+
+            expect(originalSize).not.toEqual(newSize + 1)
+        })
+    });
 })
