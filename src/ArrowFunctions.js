@@ -24,3 +24,32 @@ let sayHello = function() {
 
 // However, nothing requires something
 let sayHelloArrow = () => "Howdy";
+
+
+/*
+ * Arrow functions and this
+*/
+
+let iceCream = {
+    flavor: 'Mint Choc Chip',
+    bitesLeft: 5,
+
+    eat() {
+        if (this.bitesLeft > 0) {
+            this.bitesLeft--;
+        }
+    }
+}
+
+// sometimes we should contain ourselves and not use new things
+let iceCreamArrow = {
+    flavor: 'Mint Choc Chip',
+    size: 'L',
+    bitesLeft: 5,
+
+    eat: () => {
+        if (this.bitesLeft > 0) {
+            this.bitesLeft--;
+        }
+    }
+}
